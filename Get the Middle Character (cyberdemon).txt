@@ -1,0 +1,16 @@
+class Kata {
+  public static String getMiddle(String word) {
+     
+    char[] charWord = word.toCharArray(); 
+    int wordLength = (charWord.length/2);
+          
+   if(charWord.length == 0){
+     return String.valueOf(charWord[0]);
+   }else {
+      if ( charWord.length % 2 == 0 )
+          return (String.valueOf(charWord[(wordLength -1)] + String.valueOf(charWord[(wordLength)])));
+      else
+          return String.valueOf(charWord[(wordLength)]);
+   }
+  }
+}

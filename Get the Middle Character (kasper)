@@ -1,0 +1,16 @@
+class Kata {
+  public static String getMiddle(String word) {
+    
+    StringBuilder sb = new StringBuilder();
+    
+    int tot = word.length();
+    int q = tot/2;
+    int r = tot-(q*2);
+    
+    sb = (r == 0) ? 
+      new StringBuilder().append(word.charAt(q-1)).append(word.charAt(q)) : 
+      new StringBuilder().append(word.charAt(q));
+    
+    return sb.toString();
+  }
+}

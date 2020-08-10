@@ -11,8 +11,8 @@ public class Scramblies {
        if(count >= 0)
          sb.deleteCharAt(count);
        for (int j = 0; j < sb.length(); j++){
-         count = j;
          if(str2.charAt(i) == sb.charAt(j)){
+           count = j;
            str4 += str2.charAt(i);
            break;
          }

@@ -1,0 +1,12 @@
+public class Solution {
+    public static String solve(String str) {
+      int upChar = 0;
+      int lwChar = 0;
+      for(int i = 0; i < str.length(); i++){
+        int check = Character.isUpperCase(str.charAt(i)) ? upChar++ : lwChar++;
+      }
+      //I've change input final String str to String str in method signature
+      str = (lwChar > upChar || lwChar == upChar) ? (str = str.toLowerCase()) : (str = str.toUpperCase());
+      return str;
+    }
+}
